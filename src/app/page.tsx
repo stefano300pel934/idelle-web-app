@@ -1,101 +1,79 @@
-import Image from "next/image";
+"use client";
+import { NavigationMenuDemo } from "./menu";
+import TextTyper from "../components/TextTyper";
+import Footer from "@/components/ui/footer";
+
+
+
+
+
+
 
 export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+  
+  const title = "Consulente di marketing per pmi e professionisti";
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+
+  
+//<h1 className="mt-10 relative white-spaces-nowrap max-w-fit text-2xl before:absolute before:inset-0 before:animate-typewriter before:bg-white text-center ">
+  
+  return (
+ <><header className="row-start-3 flex gap-6 flex-wrap items-center justify-center pt-4">
+
+      <NavigationMenuDemo></NavigationMenuDemo>
+
+    </header>
+
+
+
+
+
+      <title>Stefano Pelizzari - consulente web marketing </title>
+      <div className="grid  items-center justify-items-center min-h-screen gap-4 px-4 sm:p-20">
+      <script type="text/javascript" charSet="UTF-8" src="//cdn.cookie-script.com/s/ceafed48c43b8cb6289aaa4059b2efcf.js"></script>
+        <h1 className="mt-10 relative white-spaces-nowrap max-w-fit text-4xl text-center  mx-4">{title}</h1>
+
+
+        <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
+        
+
+          <p className="max-w-fit text-xl pt-2">
+            Posso aiutarti nella costruzione della tua immagine online. Siti web, applicazioni, scrittura di articoli o gestione della newsletter.
+            Se non possiamo incontrarci di persona possiamo organizzare una videocall dove mi racconti ciò di cui hai bisogno.
+          </p>
+
+
+
+
+
+          <div className="flex gap-4 items-center flex-col sm:flex-row ">
+
+
+            <a href="/siti-web-performanti-per-aziende" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Siti vetrina</h5>
+              <p className="font-normal text-gray-700 dark:text-gray-400">A nessuno piace vedere una pagina bianca quando clicchi un bottone.
+                Ecco perch&egrave; &egrave; opportuno avere un sito web ottimizzato (non solo per la SEO) ma anche per le prestazioni di caricamento.&nbsp;
+                La maggior parte degli utenti abbandona una pagina gi&agrave; dopo un solo secondo di caricamento.</p>
+            </a>
+            <a href="/copywriter-web" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Copywriter Seo</h5>
+              <p className="font-normal text-gray-700 dark:text-gray-400">Aumenta la visibilità online con contenuti strategici! Come copywriter SEO, creo testi ottimizzati per i motori di ricerca che migliorano il posizionamento del tuo sito e attraggono il pubblico giusto. Ogni parola è pensata per convertire, senza sacrificare la qualità e l'autenticità. Scrivo anche per l'offline </p>
+            </a>
+            <a href="/consulente-web-marketing" className="block max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
+
+              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Strategia e analisi</h5>
+              <p className="font-normal text-gray-700 dark:text-gray-400">Analizzo i tuoi dati. Dal gestionale al CRM per dare coerenza alle scelte che compierai in azienda. Posso anche creare banche dati profilate e a norma di GDPR, in modo da poterle utilizzare per inviare comunicazioni commerciali e/o di marketing. Posso gestire il flusso di dati di marketing ed elaborare una strategia insieme a te</p>
+            </a>
+
+          </div>
+      
+        </main>
+        <Footer></Footer>
+      </div>  </>
   );
 }
+
+
+
